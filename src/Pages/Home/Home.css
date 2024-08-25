@@ -1,0 +1,80 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #4164a8;  */
+    
+}
+
+/* Container for the home page */
+.home-container {
+    /* position: ; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Background Video Styling */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(60%); /* Optional: Adjust the brightness of the video */
+}
+
+/* Content container to center the input and button */
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* Centered input and button */
+.bcentered-button {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.centered-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect */
+.centered-button:hover {
+    background-color: #005f73;
+}
+.logo {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: "Outfit", sans-serif;
+}
